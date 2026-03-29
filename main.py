@@ -87,4 +87,4 @@ def delete_product(product_id : int, db: Session = Depends(get_db)):
         db.delete(db_product)
         db.commit()
         return "Product deleted successfully"
-    return {"message": "Product not f
+    return {"message": "Product not found"}
